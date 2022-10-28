@@ -17,13 +17,13 @@ function init() {
     let volume = slider.value / 100;
     const speaker = document.querySelector("[alt='Volume level 2']");
     if (slider.value == 0) {
-      speaker.src = "../assets/icons/volume-level-0.svg";
+      speaker.src = "assets/icons/volume-level-0.svg";
     } else if (slider.value < 33 & slider.value >= 1) {
-      speaker.src = "../assets/icons/volume-level-1.svg";
+      speaker.src = "assets/icons/volume-level-1.svg";
     } else if (slider.value < 67 & slider.value >= 33) {
-      speaker.src = "../assets/icons/volume-level-2.svg";
+      speaker.src = "assets/icons/volume-level-2.svg";
     } else if (slider.value >= 67) {
-      speaker.src = "../assets/icons/volume-level-3.svg";
+      speaker.src = "assets/icons/volume-level-3.svg";
     }
   });
 
@@ -31,8 +31,8 @@ function init() {
     const img = document.querySelector("[alt='No image selected']");
     const audio = document.querySelector("audio");
 
-    audio.src = "../assets/audio/" + event.target.value + ".mp3";
-    img.src = "../assets/images/" + event.target.value + ".svg";
+    audio.src = "assets/audio/" + event.target.value + ".mp3";
+    img.src = "assets/images/" + event.target.value + ".svg";
     selected = event.target.value;
   });
 

@@ -5,9 +5,9 @@ function init() {
   // TODO
   setInterval(function() {
     if (synth.speaking) {
-    document.querySelector("[alt='Smiling face']").src = "../assets/images/smiling-open.png";
+    document.querySelector("[alt='Smiling face']").src = "assets/images/smiling-open.png";
     } else { 
-      document.querySelector("[alt='Smiling face']").src = "../assets/images/smiling.png";
+      document.querySelector("[alt='Smiling face']").src = "assets/images/smiling.png";
     }
   }, 3)
 
@@ -47,8 +47,8 @@ function init() {
     const check = new SpeechSynthesisUtterance("");
     speechSynthesis.speak(utterance);
     speechSynthesis.speak(check);
-    document.querySelector("[alt='Smiling face']").src = "../assets/images/smiling-open.png";
+    document.querySelector("[alt='Smiling face']").src = "assets/images/smiling-open.png";
     
-    document.querySelector("[alt='Smiling face']").src = "../assets/images/smiling.png";
+    document.querySelector("[alt='Smiling face']").src = "assets/images/smiling.png";
   });
 }

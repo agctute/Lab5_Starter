@@ -31,8 +31,8 @@ function init() {
     const img = document.querySelector("[alt='No image selected']");
     const audio = document.querySelector("audio");
 
-    audio.src = "asseaudio/" + event.target.value + ".mp3";
-    img.src = "asseimages/" + event.target.value + ".svg";
+    audio.src = "assets/audio/" + event.target.value + ".mp3";
+    img.src = "assets/images/" + event.target.value + ".svg";
     selected = event.target.value;
   });
 
